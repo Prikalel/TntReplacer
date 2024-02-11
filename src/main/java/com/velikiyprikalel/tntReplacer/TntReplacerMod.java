@@ -1,6 +1,8 @@
 package com.velikiyprikalel.tntReplacer;
 
+import com.velikiyprikalel.tntReplacer.handlers.EntityTNTPrimedSpawned;
 import com.velikiyprikalel.tntReplacer.proxy.BaseProxy;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 
 import net.minecraftforge.fml.common.SidedProxy;
@@ -18,7 +20,7 @@ public class TntReplacerMod {
     public static final String NAME = "TNT Replacer";
     public static final String VERSION = "1.0";
 
-    private static Logger logger;
+    public static Logger logger;
 
     @SidedProxy(clientSide = "com.velikiyprikalel.tntReplacer.proxy.ClientProxy", serverSide = "com.velikiyprikalel.tntReplacer.proxy.ServerProxy")
     private static BaseProxy proxy;
@@ -32,6 +34,7 @@ public class TntReplacerMod {
     @EventHandler
     public void init(FMLInitializationEvent event) {
         logger.warn("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        MinecraftForge.EVENT_BUS.register(new EntityTNTPrimedSpawned());
         proxy.init(event);
     }
 
