@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "tntReplacer",
+  "version": "1.0",
+  "name": "TNT Replacer",
+  "description": "This mod replaces common tnt with a new one with cool effect!",
+  "authors": [
+    "Velikiy Prikalel"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Prikalel"
+  },
+  "license": "LGPL 2.1",
+  "icon": "assets/tntReplacer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.velikiyprikalel.tntReplacer.tntReplacerMod"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": "~1.12",
+    "java": "8"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
