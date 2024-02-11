@@ -23,7 +23,7 @@
     ],
     "Pillaring": true,
     "Pillar Block": "minecraft:cobblestone:0",
-    "Digging": true,
+    "Digging": false,
     "Digging Blacklist": [
       "minecraft:obsidian"
     ],
