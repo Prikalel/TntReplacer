@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 
 @Mod(modid = TntReplacerMod.MOD_ID, name = TntReplacerMod.NAME, version = TntReplacerMod.VERSION)
 public class TntReplacerMod {
-    public static final String MOD_ID = "tntReplacer";
+    public static final String MOD_ID = "tntreplacer";
     public static final String NAME = "TNT Replacer";
     public static final String VERSION = "1.0";
 
@@ -31,7 +31,7 @@ public class TntReplacerMod {
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
-        logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        logger.warn("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
         proxy.init(event);
     }
 

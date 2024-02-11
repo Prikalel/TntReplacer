@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "tntReplacer",
+  "id": "tntreplacer",
   "version": "1.0",
   "name": "TNT Replacer",
   "description": "This mod replaces common tnt with a new one with cool effect!",
@@ -11,11 +11,11 @@
     "homepage": "https://github.com/Prikalel"
   },
   "license": "LGPL 2.1",
-  "icon": "assets/tntReplacer/icon.png",
+  "icon": "assets/tntreplacer/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.velikiyprikalel.tntReplacer.tntReplacerMod"
+      "com.velikiyprikalel.tntReplacer.TntReplacerMod"
     ]
   },
   "depends": {
