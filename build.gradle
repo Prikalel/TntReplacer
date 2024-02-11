@@ -70,6 +70,7 @@ dependencies {
     // compile "some.group:artifact:version:classifier"
     //implementation fg.deobf("ic2.core.item.type:industrialcraft-2:2.8.222-ex112")
     implementation fg.deobf("funwayguy.epicsiegemod.core:EpicSiegeMod:13.169")
+    implementation fg.deobf("com.xeraster.supertnt:SuperTNT:1.0.1")
 
     // Real examples
     // compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
